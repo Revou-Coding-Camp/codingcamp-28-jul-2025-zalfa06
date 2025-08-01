@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Name Input Modal -->
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome!</h2>
+            <p>Please enter your name:</p>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="setName()">Continue</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🏢</div>
+            <div class="nav-links">
+                <button class="nav-btn active" onclick="showPage('home')">Home</button>
+                <button class="nav-btn" onclick="showPage('profile')">Our Profile</button>
+                <button class="nav-btn" onclick="showPage('portfolio')">Portfolio</button>
+                <button class="nav-btn" onclick="showPage('message')">Message Us</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="welcome-section">
+            <div class="company-poster">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Company Building" class="poster-image">
+                <div class="poster-overlay">
+                    <h1 class="welcome-title">Hi <span id="userName">Guest</span>, Welcome To Website</h1>
+                    <p class="welcome-subtitle">Ini adalah website latihan pertama</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="counter">
+            <span id="visitCounter">1364578</span>
+        </div>
+
+        <div class="headquarters">
+            <h2>Our Headquarter</h2>
+            <div class="locations">
+                <div class="location">
+                    <div class="location-circle">
+                        <img src="https://images.unsplash.com/photo-1555321502-843e5dfe3ba2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Jakarta Office" class="location-image">
+                    </div>
+                    <div class="location-name">Jakarta</div>
+                </div>
+                <div class="location">
+                    <div class="location-circle">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bandung Office" class="location-image">
+                    </div>
+                    <div class="location-name">Bandung</div>
+                </div>
+                <div class="location">
+                    <div class="location-circle">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Surabaya Office" class="location-image">
+                    </div>
+                    <div class="location-name">Surabaya</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile" class="page">
+        <div class="profile-banner">
+            <h1>Our Company Profile</h1>
+            <p>Leading Innovation in Technology Solutions</p>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-card">
+                <h2>Tentang Perusahaan Kami</h2>
+                <p>PT. Teknologi Nusantara Digital adalah perusahaan teknologi terdepan yang didirikan pada tahun 2015 di Jakarta. Kami berkomitmen untuk memberikan solusi teknologi inovatif yang membantu bisnis berkembang di era digital.</p>
+                <p>Tim kami terdiri dari para profesional berpengalaman yang berdedikasi tinggi dalam bidang pengembangan web, aplikasi mobile, dan transformasi digital. Dengan kantor pusat di Jakarta, Bandung, dan Surabaya, kami melayani klien di seluruh Indonesia.</p>
+                <p>Sejak berdiri, kami telah berhasil menyelesaikan lebih dari 500 proyek dan membantu berbagai perusahaan mencapai tujuan digital mereka dengan solusi yang tepat sasaran dan berkualitas tinggi.</p>
+            </div>
+
+            <div class="profile-card">
+                <h2>Visi & Misi</h2>
+                <h3>Visi:</h3>
+                <p>Menjadi penyedia solusi teknologi terdepan di Asia Tenggara yang memberdayakan bisnis melalui transformasi digital yang inovatif dan berkelanjutan.</p>
+                
+                <h3>Misi:</h3>
+                <ul>
+                    <li>Menyediakan solusi teknologi mutakhir yang mendorong pertumbuhan bisnis klien</li>
+                    <li>Mengembangkan inovasi dan kreativitas dalam setiap layanan yang kami berikan</li>
+                    <li>Membangun kemitraan jangka panjang dengan klien berdasarkan kepercayaan</li>
+                    <li>Mempertahankan standar kualitas dan pelayanan terbaik di industri</li>
+                    <li>Berkontribusi pada kemajuan ekonomi digital Indonesia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-card">
+                <h2>Layanan Kami</h2>
+                <ul>
+                    <li>Pengembangan Website & Desain UI/UX</li>
+                    <li>Pengembangan Aplikasi Mobile (Android & iOS)</li>
+                    <li>Solusi E-commerce & Marketplace</li>
+                    <li>Digital Marketing & SEO</li>
+                    <li>Layanan Cloud Computing</li>
+                    <li>Konsultasi IT & Strategi Digital</li>
+                    <li>Integrasi Sistem & API</li>
+                    <li>Dukungan Teknis 24/7</li>
+                </ul>
+            </div>
+
+            <div class="profile-card">
+                <h2>Mengapa Memilih Kami</h2>
+                <ul>
+                    <li>Tim berpengalaman dengan 8+ tahun di industri teknologi</li>
+                    <li>Track record terbukti dengan 500+ proyek sukses</li>
+                    <li>Kehadiran multi-lokasi di seluruh Indonesia</li>
+                    <li>Metodologi pengembangan Agile yang efisien</li>
+                    <li>Harga kompetitif dengan sistem pembayaran fleksibel</li>
+                    <li>Dukungan komprehensif pasca peluncuran</li>
+                    <li>Sertifikasi ISO 9001:2015 untuk manajemen kualitas</li>
+                    <li>Fokus kuat pada kepuasan pelanggan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Page -->
+    <div id="portfolio" class="page">
+        <div class="profile-banner">
+            <h1>Portofolio Kami</h1>
+            <p>Menampilkan Karya Terbaik & Pencapaian Perusahaan</p>
+        </div>
+        
+        <div class="profile-content">
+            <div class="profile-card">
+                <h2>Proyek Website E-Commerce</h2>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Project">
+                </div>
+                <p><strong>Klien:</strong> PT. Fashion Indonesia</p>
+                <p><strong>Tahun:</strong> 2024</p>
+                <p>Pengembangan platform e-commerce lengkap dengan sistem manajemen inventory, payment gateway terintegrasi, dan dashboard analytics untuk monitoring penjualan real-time.</p>
+            </div>
+
+            <div class="profile-card">
+                <h2>Aplikasi Mobile Banking</h2>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mobile Banking App">
+                </div>
+                <p><strong>Klien:</strong> Bank Digital Nusantara</p>
+                <p><strong>Tahun:</strong> 2023</p>
+                <p>Aplikasi mobile banking dengan fitur keamanan tinggi, transfer real-time, dan UI/UX yang user-friendly. Telah diunduh lebih dari 100,000 pengguna.</p>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-card">
+                <h2>Sistem Manajemen Sekolah</h2>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="School Management System">
+                </div>
+                <p><strong>Klien:</strong> Yayasan Pendidikan Maju</p>
+                <p><strong>Tahun:</strong> 2024</p>
+                <p>Platform komprehensif untuk manajemen siswa, guru, dan kurikulum dengan fitur e-learning terintegrasi yang mendukung pembelajaran hybrid.</p>
+            </div>
+
+            <div class="profile-card">
+                <h2>Website Corporate</h2>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Website">
+                </div>
+                <p><strong>Klien:</strong> PT. Konstruksi Megah</p>
+                <p><strong>Tahun:</strong> 2023</p>
+                <p>Website corporate dengan desain modern, CMS custom, dan optimasi SEO yang berhasil meningkatkan traffic organik hingga 300%.</p>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <h2>Pencapaian Kami</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Proyek Selesai</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Klien Aktif</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Tahun Pengalaman</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Tingkat Kepuasan</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Us Page -->
+    <div id="message" class="page">
+        <div class="headquarters">
+            <h2>Our Headquarter</h2>
+            <div class="locations">
+                <div class="location">
+                    <div class="location-circle">
+                        <img src="https://images.unsplash.com/photo-1555321502-843e5dfe3ba2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Jakarta Office" class="location-image">
+                    </div>
+                    <div class="location-name">Jakarta</div>
+                </div>
+                <div class="location">
+                    <div class="location-circle">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bandung Office" class="location-image">
+                    </div>
+                    <div class="location-name">Bandung</div>
+                </div>
+                <div class="location">
+                    <div class="location-circle">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Surabaya Office" class="location-image">
+                    </div>
+                    <div class="location-name">Surabaya</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-section">
+            <div class="message-form">
+                <h2>Message Us</h2>
+                <form id="messageForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggalLahir">Tanggal Lahir:</label>
+                        <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <div class="gender-group">
+                            <div class="gender-option">
+                                <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" required>
+                                <label for="lakiLaki">Laki-Laki</label>
+                            </div>
+                            <div class="gender-option">
+                                <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" required>
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan:</label>
+                        <textarea id="pesan" name="pesan" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <div class="message-output">
+                <div class="output-title">Current time: <span id="currentTime"></span></div>
+                <div class="output-content" id="outputContent">
+                    <strong>Nama:</strong> [Akan tampil setelah submit]<br>
+                    <strong>Tanggal Lahir:</strong> [Akan tampil setelah submit]<br>
+                    <strong>Jenis Kelamin:</strong> [Akan tampil setelah submit]<br>
+                    <strong>Pesan:</strong> [Akan tampil setelah submit]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
